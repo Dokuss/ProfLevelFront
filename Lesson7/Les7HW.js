@@ -6,7 +6,22 @@ console.log(checkEvenChar(‘меню’))
 
 Результат: 1
 
-Создайте функцию getRandomChar(word), которая в качестве аргумента передает строку произвольной длины и возвращает случайный символ строки.
+    Решение:
+
+function checkEvenChar(word) {
+    if (Math.sqrt(word.length) % 1 == 0) {
+        console.log(1);
+    }
+    else
+    console.log(0);
+}
+
+checkEvenChar('abra')
+*/
+
+
+/*
+    Создайте функцию getRandomChar(word), которая в качестве аргумента передает строку произвольной длины и возвращает случайный символ строки.
 
     Примечание:
 	Воспользуйтесь библиотекой Math. 
@@ -17,8 +32,26 @@ console.log(checkEvenChar(‘меню’))
 console.log(getRandomChar(‘меню’))
 
 Результат: ‘н’
+*/
+// let result = Math.floor(Math.random(word) * 100)
+// console.log(result)
 
-Напишите функцию getRandomChars(word, n), которая в качестве аргумента принимает строку и число.Реализуйте функционал, который вернет в результате выполнения функции n рандомных символом строки word.
+
+let word = 'abrakadabra'
+
+function getRandomChar(word) {
+
+    return Math.round(Math.random(word.length - 1) * 100);
+    
+}
+
+// console.log(getRandomChar);
+
+console.log(word[getRandomChar]);
+
+/*
+Напишите функцию getRandomChars(word, n), которая в качестве аргумента принимает строку и число.Реализуйте функционал, 
+который вернет в результате выполнения функции n рандомных символом строки word.
 
     Пример:
 console.log(getRandomChars(‘меню’, 3))
