@@ -21,7 +21,7 @@ function quad(array) {
         array[elem] = array[elem] * 2
     }
 } */
-
+/* 
 function getTodosByUserName(name){
     let fetchTodos = fetch('https://jsonplaceholder.typicode.com/todos').then(res => res.json())
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -33,7 +33,8 @@ function getTodosByUserName(name){
 }
 
 getTodosByUserName('Kurtis Weissnat')
-
+ */
+/* 
 async function getFetchData(){
     let res = await fetch('https://jsonplaceholder.typicode.com/users').then()
     let data = await res.json()
@@ -41,3 +42,4 @@ async function getFetchData(){
 }
 
 getFetchData()
+ */
